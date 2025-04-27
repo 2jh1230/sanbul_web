@@ -3,7 +3,6 @@ from tensorflow import keras
 import numpy as np
 import pandas as pd
 from flask import Flask, render_template, request
-from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
@@ -18,7 +17,7 @@ np.random.seed(42)
 # Flask 앱 설정
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hard to guess string'
-bootstrap5 = Bootstrap5(app)
+
 
 # 폼 클래스 정의
 class LabForm(FlaskForm):
