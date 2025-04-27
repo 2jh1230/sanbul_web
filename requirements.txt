@@ -1,6 +1,5 @@
 Flask
 flask-wtf
-flask-bootstrap
 tensorflow
 scikit-learn
 pandas
